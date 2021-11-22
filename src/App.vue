@@ -18,7 +18,7 @@
 
       <div class="nav-menu" v-for="item in this.menu" :key="item.name">
         <v-btn text @click="scrollingTo(item.route)" class="mx-1">
-          <span >{{ item.name }}</span>
+          <span>{{ item.name }}</span>
         </v-btn>
       </div>
 
@@ -49,20 +49,26 @@
         <span class="mr-2">Linked in</span>
       </a>
     </Slide>
-    <Home class="mt-9 mt-md-0" />
+    <Home class="mt-9 mt-sm-0" />
+    <Projects />
+    <Contact />
   </v-app>
 </template>
 
 <script>
-import Home from "./components/Home.vue";
 import { Slide } from "vue-burger-menu";
+import Home from "./components/Home.vue";
+import Projects from "./components/Portfolio.vue";
+import Contact from "./components/Contact.vue";
 
 export default {
   name: "App",
 
   components: {
-    Home,
     Slide,
+    Home,
+    Projects,
+    Contact
   },
 
   data: () => ({
@@ -79,12 +85,12 @@ export default {
       },
       {
         name: "Portfolio",
-        route: "b",
+        route: "projects",
         icon: "lightbulb",
       },
       {
         name: "Contacto",
-        route: "",
+        route: "contact",
         icon: "email-outline",
       },
     ],
@@ -93,8 +99,8 @@ export default {
     scrollingTo(route) {
       let coordY = document.getElementById(route).offsetTop;
       scroll({
-        top: coordY-70,
-        behavior: "smooth"
+        top: coordY - 70,
+        behavior: "smooth",
       });
     },
   },

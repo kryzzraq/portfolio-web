@@ -27,7 +27,7 @@
       <div class="about secondary--text">
         <div>Mi historia<span class="primary--text">:</span></div>
       </div>
-      <div class="history-text">
+      <div class="mx-3">
         <p>
           En el año 2019, tras estar muchos años trabajando, decidí cambiar de
           sector profesional al mundo IT que siempre me ha gustado. Comencé mi
@@ -55,50 +55,52 @@
           fundamentados.
         </p>
       </div>
-    </section>
-    <section
-      class="px-3 d-flex justify-space-around flex-wrap-reverse align-center"
-    >
-      <article class="skills primary white--text pa-7">
-        <span class="text-button">Skills</span>
-        <ul class="px-7">
-          <li v-for="item in this.mySkills" :key="item.name">
-            {{ item.name }}
-          </li>
-        </ul>
+      <article
+        class="px-3 d-flex justify-space-around flex-wrap align-center"
+      >
+        <div class="skills primary white--text pa-7">
+          <span class="text-button">Skills</span>
+          <ul class="px-7">
+            <li v-for="item in this.mySkills" :key="item.name">
+              {{ item.name }}
+            </li>
+          </ul>
+        </div>
+        <article class="skills-2">
+          <lottie-player
+            class="animation-reverse"
+            src="https://assets6.lottiefiles.com/packages/lf20_ahviymvg.json"
+            background="transparent"
+            speed="0.75"
+            style="width: 300px; height: 300px"
+            loop
+            autoplay
+          ></lottie-player>
+        </article>
       </article>
-      <article class="skills-2">
-        <lottie-player
-          class="animation-reverse"
-          src="https://assets6.lottiefiles.com/packages/lf20_yjxlc3cg.json"
-          background="transparent"
-          speed="1"
-          style="width: 300px; height: 300px"
-          loop
-          autoplay
-        ></lottie-player>
+      <article class="mt-5 px-3">
+        <p>
+          En el ámbito educativo comenzamos a dar nuestras primeras pinceladas
+          en programación con Java. Ya en el segundo curso del ciclo vimos
+          <span class="primary--text font-weight-bold"
+            >JavaScript ES6, PHP y CSS.</span
+          >
+          En el TFM del ciclo superior de Desarrollo de aplicaciones web utilicé
+          <span class="primary--text font-weight-bold">SLIM framework</span>
+          (PHP) para hacer una API sencilla y muy legible. Además usé
+          <span class="primary--text font-weight-bold">VUE</span> para front,
+          comenzando así mi estudio en este framework.
+        </p>
+        <p>
+          En la actualidad estoy terminando de perfeccionar mis conocimientos de
+          <span class="primary--text font-weight-bold">VUE</span> y estoy
+          comenzando a estudiar
+          <span class="primary--text font-weight-bold">React</span>. Cuando
+          termine con React mis planes de futuro son estudiar
+          <span class="primary--text font-weight-bold">Angular.</span>
+        </p>
       </article>
     </section>
-    <article class="mt-5 px-3">
-      <p>
-        En el ámbito educativo comenzamos a dar nuestras primeras pinceladas en
-        programación con Java. Ya en el segundo curso del ciclo vimos
-        <span class="primary--text font-weight-bold"
-          >JavaScript ES6, PHP y CSS.</span
-        >
-        En el TFM del ciclo superior de Desarrollo de aplicaciones web utilicé
-        <span class="primary--text font-weight-bold">SLIM framework</span>
-        (PHP) para hacer una API sencilla y muy legible. Además usé
-        <span class="primary--text font-weight-bold">VUE</span> para front,
-        comenzando así mi estudio en este framework.
-      </p>
-      <p>
-        En la actualidad estoy terminando de perfeccionar mis conocimientos de
-        <span class="primary--text font-weight-bold">VUE</span> y estoy
-        empezando a comenzando a estudiar
-        <span class="primary--text font-weight-bold">React</span>.
-      </p>
-    </article>
   </v-container>
 </template>
 
@@ -153,7 +155,7 @@ export default {
 }
 .about {
   font-weight: 600;
-  font-size: 3rem;
+  font-size: 2.8rem;
 }
 .skills {
   width: 15em;
