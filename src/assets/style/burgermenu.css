@@ -1,26 +1,37 @@
-.bm-burger-button{
+.bm-burger-button {
     height: 20px;
     width: 25px;
     padding:10px;
     position:fixed;
-    top:30px;
-    left:25px;
-    z-index: 1;
+    top: 20px;
+    left: 15px;
+    z-index: 10;
     background-color:#fff;
     border: 10px solid white;
     border-radius: 50%;
     box-shadow: 2px 2px 10px 2px #b6b6b6;
 }
-.bm-menu{
+.bm-menu {
     background: #0f4467;
 }
-.bm-cross{
+.bm-cross {
     background:white;
 }
-.montserrat{
+.montserrat {
     font-family: 'Montserrat', sans-serif;
 }
 .itemList {
     padding: 0.3em;
     margin: 0.7em 0;
+}
+.bm-burger-button {
+    border: 10px solid white;
+    border-radius: 24px;
+    z-index: 1;
+}
+a {
+    transition: 0.3s;
+}
+.link:hover {
+    color: #47a3ff !important;
 }

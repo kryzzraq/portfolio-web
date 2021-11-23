@@ -23,11 +23,11 @@
         </div>
       </div>
     </section>
-    <section id="about" class="px-3" ref="about">
+    <section id="about" class="px-1" ref="about">
       <div class="about secondary--text">
         <div>Mi historia<span class="primary--text">:</span></div>
       </div>
-      <div class="mx-3">
+      <div class="px-1">
         <p>
           En el año 2019, tras estar muchos años trabajando, decidí cambiar de
           sector profesional al mundo IT que siempre me ha gustado. Comencé mi
@@ -56,7 +56,7 @@
         </p>
       </div>
       <article
-        class="px-3 d-flex justify-space-around flex-wrap align-center"
+        class="px-1 d-flex justify-space-around flex-wrap align-center"
       >
         <div class="skills primary white--text pa-7">
           <span class="text-button">Skills</span>
@@ -69,7 +69,7 @@
         <article class="skills-2">
           <lottie-player
             class="animation-reverse"
-            src="https://assets6.lottiefiles.com/packages/lf20_ahviymvg.json"
+            src="https://assets7.lottiefiles.com/packages/lf20_ockwuxcf.json"
             background="transparent"
             speed="0.75"
             style="width: 300px; height: 300px"
@@ -78,12 +78,12 @@
           ></lottie-player>
         </article>
       </article>
-      <article class="mt-5 px-3">
+      <article class="mt-5 px-1">
         <p>
           En el ámbito educativo comenzamos a dar nuestras primeras pinceladas
           en programación con Java. Ya en el segundo curso del ciclo vimos
           <span class="primary--text font-weight-bold"
-            >JavaScript ES6, PHP y CSS.</span
+            >JavaScript ES6, PHP y CSS3.</span
           >
           En el TFM del ciclo superior de Desarrollo de aplicaciones web utilicé
           <span class="primary--text font-weight-bold">SLIM framework</span>
