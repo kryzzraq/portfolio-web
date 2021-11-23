@@ -164,7 +164,7 @@ export default {
     margin-bottom: -1rem;
 }
 .social-media-bg {
-  background-color: #1662ae;
+  background-color: #175593;
   padding: 25px;
 }
 .social-media{
