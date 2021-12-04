@@ -5,13 +5,17 @@
         <div>Mi contacto<span class="primary--text">:</span></div>
       </div>
       <section class="px-1">
-        ¿Estás interesado en algún servicio? ¿Quiéres colaborar en algún
-        proyecto? Ponte en contacto conmigo y cuéntame lo que necesitas. 
-        <p>¡Quizá podamos ayudarnos!</p> 
+        ¿Quiéres colaborar en algún proyecto? Ponte en contacto conmigo y
+        cuéntame tus ideas.
+        <p>¡Quizá podamos ayudarnos!</p>
       </section>
       <section class="mt-4 ml-1">
-        Puedes contactar conmigo por email en: 
-        <a href="mailto:lauramartinv394@gmail.com" class="font-weight-bold link mx-1">lauramartinv394@gmail.com</a>
+        Puedes contactar conmigo por email en:
+        <a
+          href="mailto:lauramartinv394@gmail.com"
+          class="font-weight-bold link mx-1"
+          >lauramartinv394@gmail.com</a
+        >
         o contactar conmigo a través de linked in.
       </section>
     </article>
