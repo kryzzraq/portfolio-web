@@ -13,7 +13,7 @@
         Puedes contactar conmigo por email en:
         <a
           href="mailto:lauramartinv394@gmail.com"
-          class="font-weight-bold link mx-1"
+          class="font-weight-bold link"
           >lauramartinv394@gmail.com</a
         >
         o contactar conmigo a través de linked in.

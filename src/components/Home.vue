@@ -1,6 +1,8 @@
 <template>
   <v-container class="montserrat">
     <section class="d-flex align-center justify-center flex-column mt-16">
+      <div class="presentation-bg"></div>
+      <div class="presentation-bg-2"></div>
       <div class="subtitle">
         <div>FRONT-END</div>
         <div>DEVELOPER</div>
@@ -55,10 +57,8 @@
           fundamentados.
         </p>
       </div>
-      <article
-        class="px-1 d-flex justify-space-around flex-wrap align-center"
-      >
-        <div class="skills primary white--text pa-7">
+      <article class="px-1 d-flex justify-space-around flex-wrap align-center">
+        <div class="skills primary white--text px-6 py-5">
           <span class="text-button">Skills</span>
           <ul class="px-7">
             <li v-for="item in this.mySkills" :key="item.name">
@@ -128,7 +128,10 @@ export default {
         name: "Java",
       },
       {
-        name: "Python",
+        name: "MySql",
+      },
+      {
+        name: "MongoDB",
       },
     ],
   }),
@@ -141,6 +144,27 @@ export default {
   font-size: 4.5rem;
   position: absolute;
   line-height: 1.2;
+  z-index: 2;
+}
+.presentation-bg {
+  position: absolute;
+  right: -50px;
+  height: 380px;
+  background-image: url("../assets/background1.svg");
+  background-size: contain;
+  background-position: right;
+  background-size: 60%;
+  width: 100vw;
+}
+.presentation-bg-2 {
+  position: absolute;
+  left: -120px;
+  height: 380px;
+  background-image: url("../assets/background2.svg");
+  background-size: contain;
+  background-position: left;
+  background-size: 60%;
+  width: 100vw;
 }
 .mini-text {
   font-size: 1rem;
@@ -149,18 +173,25 @@ export default {
   margin-top: 1rem;
 }
 .subtitle {
-  color: rgb(241, 241, 241);
+  color: rgb(209, 209, 209);
   font-weight: 600;
   font-size: 8rem;
+  z-index: 1;
 }
 .about {
+  margin-top: 0.4em;
   font-weight: 600;
   font-size: 2.8rem;
 }
 .skills {
+  transition-duration: 0.5s;
   width: 15em;
   height: 15em;
   border-radius: 10px;
+}
+.skills:hover {
+  transform: scale(1.1);
+  transition-timing-function: cubic-bezier(0.47, 2.02, 0.31, -0.36);
 }
 .skills-2 {
   width: auto;
@@ -173,18 +204,28 @@ export default {
 }
 @media (max-width: 870px) {
   .subtitle {
-    font-size: 5rem;
+    font-size: 3.5rem;
+    line-height: 1;
+    height: 180px;
   }
   .presentation {
     font-size: 4rem;
   }
   .about {
-    margin-top: 1em;
+    margin-top: 1.7em;
+  }
+  .presentation-bg,
+  .presentation-bg-2 {
+    background-size: 30.2em;
+  }
+  .presentation-bg-2 {
+    left: -6em;
   }
 }
 @media (max-width: 530px) {
   .subtitle {
     font-size: 3rem;
+    color: rgb(224, 224, 224);
   }
   .presentation {
     margin-top: 3rem;
@@ -192,6 +233,16 @@ export default {
   }
   .about {
     margin-top: 2.5em;
+  }
+  .presentation-bg-2,
+  .presentation-bg {
+    background-size: 35em;
+  }
+  .presentation-bg-2 {
+    left: -12.4em;
+  }
+  .presentation-bg {
+    right: -8em;
   }
 }
 </style>
