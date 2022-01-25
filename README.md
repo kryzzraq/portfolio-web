@@ -1,5 +1,5 @@
 # Portfolio web
-Web portfolio I made with VUE.js
+Web portfolio I made with VUE.js <br/>
 You can see the result at: <a href="https://www.kryzz-dev.com/" target="blank">https://www.kryzz-dev.com/</a>
 
 ## How to setup
